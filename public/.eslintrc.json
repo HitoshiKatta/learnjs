@@ -8,8 +8,8 @@
         "jasmine": true
     },
     "globals": {
-				"learnjs": true,
-		},
+        "learnjs": true
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -23,6 +23,12 @@
         "no-unreachable": "warn",
         "no-unused-vars": "warn",
         "constructor-super": "warn",
-        "valid-typeof": "warn"
+        "valid-typeof": "warn",
+        "semi": ["error", "always"],
+        "no-extra-semi": "error",
+        "prefer-const": ["error", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }]
     }
 }
