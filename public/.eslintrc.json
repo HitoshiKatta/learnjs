@@ -8,7 +8,9 @@
         "jasmine": true
     },
     "globals": {
-        "learnjs": true
+        "learnjs": true,
+        "AWS": false,
+        "gapi":false
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,7 +18,10 @@
         },
         "sourceType": "module"
     },
+    "extends": "eslint:recommended",
     "rules": {
+        "comma-dangle": ["error", "never"],
+        "no-case-declarations": "warn",
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
         "no-undef": "warn",
